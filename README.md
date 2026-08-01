@@ -13,13 +13,18 @@ App 源码在另一个仓库（私有）。这里只放必须公开可访问的�
 
 提交时要填的其他字段见 [APP-STORE.md](APP-STORE.md)。
 
-## 还没做完的一件事
+## 支持邮箱
 
-三个页面里的 `SUPPORT_EMAIL` 是占位符，需要替换成真实的支持邮箱：
+三个页面统一用 `stonsy1999@gmail.com`。要换的话：
 
 ```bash
-grep -rl SUPPORT_EMAIL . | xargs sed -i '' 's/SUPPORT_EMAIL/你的邮箱/g'
+grep -rl stonsy1999@gmail.com . | xargs sed -i '' 's/stonsy1999@gmail.com/新邮箱/g'
 ```
+
+## 截图
+
+`assets/shots/` 里是中英两套模拟器截图，落地页按当前语言切换显示。
+app 改了界面之后要重新出图，别让站点上的截图和真实 app 对不上。
 
 ## 改动之后
 
@@ -27,6 +32,12 @@ grep -rl SUPPORT_EMAIL . | xargs sed -i '' 's/SUPPORT_EMAIL/你的邮箱/g'
 
 ```bash
 python3 -m http.server 8000
+```
+
+排版可以不开浏览器直接出图检查：
+
+```bash
+qlmanage -t -s 1400 -o /tmp index.html && open /tmp/index.html.png
 ```
 
 双语是靠 `lang="zh"` / `lang="en"` 两套元素加 CSS 显隐实现的，

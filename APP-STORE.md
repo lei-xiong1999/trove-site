@@ -50,7 +50,7 @@ ITSAppUsesNonExemptEncryption = NO
 
 - [ ] 截图：6.9"（iPhone 17 Pro Max）和 6.5" 各若干张，中英各一套
 - [ ] App 名称、副标题、关键词、描述（中英）
-- [ ] 支持邮箱——把三个页面里的 `SUPPORT_EMAIL` 替换掉
+- [ ] 支持邮箱——把三个页面里的 `stonsy1999@gmail.com` 替换掉
 - [ ] 分类：建议主类目 Finance，副类目 Productivity
 - [ ] 版权信息、联系人信息
 - [ ] 中国区上架另需软件著作权登记证书等材料（这部分我帮不上）
