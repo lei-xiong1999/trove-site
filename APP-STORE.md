@@ -7,12 +7,16 @@ App Store Connect 提交时要填的东西。**答案基于 1.0 的实际行为*
 
 | 字段 | 必填 | 填什么 |
 |---|---|---|
-| Privacy Policy URL | 是 | `https://lei-xiong1999.github.io/trove/privacy.html` |
-| Support URL | 是 | `https://lei-xiong1999.github.io/trove/support.html` |
-| Marketing URL | 否 | `https://lei-xiong1999.github.io/trove/` |
+| Privacy Policy URL | 是 | `https://lei-xiong1999.github.io/trove-site/privacy.html` |
+| Support URL | 是 | `https://lei-xiong1999.github.io/trove-site/support.html` |
+| Marketing URL | 否 | `https://lei-xiong1999.github.io/trove-site/` |
 | License Agreement | 否 | 不填则套苹果标准 EULA；想用自己的就贴 `terms.html` 正文 |
 
-app 内（设置页、付费墙）写死的就是这三个地址，改仓库名或路径会同时打断它们。
+app 内（设置页、付费墙）写死的就是这三个地址。
+
+> **别改这两个仓库的名字。** 代码仓库叫 `trove`、站点仓库叫 `trove-site`，
+> 这两个名字同时被三处依赖：app 里写死的链接、GitHub Pages 的路径、
+> 以及 Xcode Cloud 记录的克隆地址。改过一次名，Xcode Cloud 就在克隆阶段挂了。
 
 ## App Privacy（隐私营养标签）
 
