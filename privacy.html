@@ -26,20 +26,20 @@
 
 <h1 lang="en">Privacy Policy</h1>
 <h1 lang="zh">隐私政策</h1>
-<p class="meta" lang="en">Effective 2 August 2026 · Applies to Trove (长物) for iOS</p>
-<p class="meta" lang="zh">生效日期 2026 年 8 月 2 日 · 适用于 iOS 版长物（Trove）</p>
+<p class="meta" lang="en">Effective 3 August 2026 · Applies to Trove (长物) for iOS</p>
+<p class="meta" lang="zh">生效日期 2026 年 8 月 3 日 · 适用于 iOS 版长物（Trove）</p>
 
 <div class="summary">
-  <p lang="en"><strong>The short version:</strong> Trove has no account system and no server of its own. Everything you record is stored on your device, and the developer never receives any of it. Exactly two things leave your device: the item name you type may be sent to the public Wikidata API to suggest a category when local matching fails, and purchases are handled by Apple. Nothing else.</p>
-  <p lang="zh"><strong>一句话版本：</strong>长物没有账号系统，也没有自己的服务器。你记录的一切都存在设备上，开发者拿不到其中任何内容。只有两样东西会离开你的设备：本地匹配失败时，你输入的物品名称可能会被发送到公开的 Wikidata API 用于推断品类；以及购买由苹果处理。除此之外没有别的。</p>
+  <p lang="en"><strong>The short version:</strong> nothing you record leaves your device. Trove has no account system and no server of its own, and it sends none of your data anywhere. The only network traffic the app generates is Apple's own purchase flow, which never carries your records.</p>
+  <p lang="zh"><strong>一句话版本：</strong>你记录的任何内容都不会离开你的设备。长物没有账号系统，也没有自己的服务器，不向任何地方发送你的数据。app 产生的唯一网络流量是苹果自己的购买流程，那里面不含你的任何记录。</p>
 </div>
 
 <h2 lang="en">1. What we collect</h2>
 <h2 lang="zh">一、我们收集什么</h2>
 <p lang="en">Nothing. There is no server behind Trove and no account to sign into, so there is nowhere for your records to be sent and nothing for the developer to look at. Your list of items, their prices, dates and notes never leave your device.</p>
 <p lang="zh">什么都不收集。长物背后没有服务器，也没有账号可登录，所以你的记录无处可发，开发者也没有任何东西可看。你的物品清单、价格、日期和备注都不会离开你的设备。</p>
-<p lang="en">The app does make network requests in two clearly bounded situations, described in sections 3 and 4. Neither one sends anything to the developer.</p>
-<p lang="zh">app 确实会在两种界限清楚的情况下发起网络请求，见第三节和第四节。这两种情况都不会向开发者发送任何东西。</p>
+<p lang="en">Item names, prices, dates and notes are never transmitted — not to the developer, and not to any third party. Category recognition, the model catalogue and the exchange-rate table all run entirely offline from data bundled inside the app.</p>
+<p lang="zh">物品名称、价格、日期和备注从不被传输——不发给开发者，也不发给任何第三方。品类识别、型号目录和汇率表全部离线运行，数据打包在 app 内部。</p>
 
 <h2 lang="en">2. What you enter, and where it lives</h2>
 <h2 lang="zh">二、你输入的内容存在哪里</h2>
@@ -48,43 +48,32 @@
 <p lang="en">Product reference data — the model catalogue and the exchange-rate table — is bundled inside the app itself. Nothing is looked up online.</p>
 <p lang="zh">参考数据——型号目录和汇率表——是打包在 app 内部的，不会去网上查询任何东西。</p>
 
-<h2 lang="en">3. Online category recognition</h2>
-<h2 lang="zh">三、联网品类识别</h2>
-<p lang="en">When you type an item name that the built-in model catalogue does not recognise, Trove may send <strong>that name and nothing else</strong> to the public <a href="https://www.wikidata.org/">Wikidata</a> API in order to suggest a category. The request happens after you pause typing, and only when local matching has already failed.</p>
-<p lang="zh">当你输入的物品名称在内置型号目录里找不到时，长物可能会把<strong>这个名称、且仅这个名称</strong>发送给公开的 <a href="https://www.wikidata.org/">Wikidata</a> API，用来推断它属于哪个品类。请求发生在你停止输入之后，且仅在本地匹配已经失败时。</p>
-<div class="key">
-  <p lang="en">The price you paid, the purchase date, your notes, the rest of your collection, your device identifiers and any account information are <strong>not</strong> part of that request. Wikimedia receives a search term and returns encyclopaedia entries; it is not told who asked, and the developer never sees the request at all.</p>
-  <p lang="zh">你付了多少钱、什么时候买的、备注内容、清单里的其他物品、设备标识符和任何账号信息，<strong>都不在</strong>这个请求里。Wikimedia 收到的是一个搜索词、返回的是百科条目；它不知道是谁问的，而开发者从头到尾看不到这个请求。</p>
-</div>
-<p lang="en">Wikimedia processes it under the <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia Foundation privacy policy</a>. If you would rather nothing left your device at all, avoid entering item names you consider sensitive — a name that the local catalogue already recognises never triggers a request.</p>
-<p lang="zh">Wikimedia 依据其<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">基金会隐私政策</a>处理该请求。如果你希望完全不让任何东西离开设备，就不要把你认为敏感的字眼写进物品名称——本地目录已经认识的名称永远不会触发请求。</p>
-
-<h2 lang="en">4. Purchases</h2>
-<h2 lang="zh">四、购买</h2>
+<h2 lang="en">3. Purchases</h2>
+<h2 lang="zh">三、购买</h2>
 <p lang="en">Trove offers a one-time purchase that removes the free item limit. It is processed entirely by Apple through the App Store; the app only asks the system whether the purchase exists. The developer never sees your payment details, your Apple ID, or your purchase history, and no purchase information is stored on any server.</p>
 <p lang="zh">长物提供一次性内购以解除免费额度限制。整个流程由苹果通过 App Store 处理，app 只向系统查询「这笔购买是否存在」。开发者看不到你的支付信息、Apple ID 或购买记录，也没有任何服务器保存购买信息。</p>
 
-<h2 lang="en">5. Device backups</h2>
-<h2 lang="zh">五、设备备份</h2>
+<h2 lang="en">4. Device backups</h2>
+<h2 lang="zh">四、设备备份</h2>
 <p lang="en">If you have iCloud Backup or encrypted local backups enabled, your device backup may include Trove's data file, in the same way it includes data from your other apps. That is Apple's mechanism, governed by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. The developer has no access to your backups.</p>
 <p lang="zh">如果你开启了 iCloud 备份或加密的本地备份，设备备份中可能包含长物的数据文件——和你其他 app 的数据一样。这是苹果的机制，适用<a href="https://www.apple.com/legal/privacy/">苹果的隐私政策</a>。开发者无法访问你的备份。</p>
 
-<h2 lang="en">6. Third parties</h2>
-<h2 lang="zh">六、第三方</h2>
+<h2 lang="en">5. Third parties</h2>
+<h2 lang="zh">五、第三方</h2>
 <p lang="en">Trove contains no analytics, no crash reporting, no advertising, no attribution SDK, and no third-party libraries of any kind. Nothing profiles you and nothing follows you between apps.</p>
 <p lang="zh">长物里没有数据分析、没有崩溃上报、没有广告、没有归因 SDK，也没有任何第三方库。没有东西给你画像，也没有东西跨 app 跟着你。</p>
-<p lang="en">The only outside parties involved at all are Wikimedia, which answers category lookups (section 3), and Apple, which handles purchases (section 4). Neither is an advertising or analytics partner, and neither receives your records.</p>
-<p lang="zh">全部涉及的外部方只有两个：回答品类查询的 Wikimedia（第三节），和处理购买的苹果（第四节）。两者都不是广告或分析伙伴，也都拿不到你的记录。</p>
+<p lang="en">The only outside party involved at all is Apple, which handles purchases (section 3). Apple is not an advertising or analytics partner here, and it never receives your records.</p>
+<p lang="zh">全部涉及的外部方只有苹果一个，负责处理购买（第三节）。它在这里不是广告或分析伙伴，也拿不到你的任何记录。</p>
 
-<h2 lang="en">7. Permissions</h2>
-<h2 lang="zh">七、权限</h2>
+<h2 lang="en">6. Permissions</h2>
+<h2 lang="zh">六、权限</h2>
 <p lang="en">Trove requests no system permissions. It does not access your camera, photo library, location, contacts, microphone, health data, or notifications. It does not use the advertising identifier and does not track you across apps or websites.</p>
 <p lang="zh">长物不申请任何系统权限。它不访问你的相机、相册、定位、通讯录、麦克风、健康数据或通知。它不使用广告标识符，也不会跨 app 或网站追踪你。</p>
 <p lang="en">The Language row in Settings opens the iOS Settings page for Trove; no information is passed along. Links to this website open in your browser.</p>
 <p lang="zh">设置页的「语言」一行会跳到 iOS 系统设置中长物的页面，这个过程不传递任何信息。指向本网站的链接会在浏览器中打开。</p>
 
-<h2 lang="en">8. Your control over the data</h2>
-<h2 lang="zh">八、你对数据的控制</h2>
+<h2 lang="en">7. Your control over the data</h2>
+<h2 lang="zh">七、你对数据的控制</h2>
 <ul lang="en">
   <li>Delete individual items from the item detail screen.</li>
   <li>Use <em>Settings → Restore sample data</em> to overwrite everything you have recorded.</li>
@@ -98,25 +87,25 @@
 <p lang="en">Because no copy of your data exists anywhere else, there is nothing for the developer to delete on your behalf and no request process to go through.</p>
 <p lang="zh">因为你的数据在别处不存在任何副本，所以开发者这边没有东西可以替你删除，你也不需要走任何申请流程。</p>
 
-<h2 lang="en">9. Children</h2>
-<h2 lang="zh">九、儿童</h2>
+<h2 lang="en">8. Children</h2>
+<h2 lang="zh">八、儿童</h2>
 <p lang="en">Trove is not directed at children and collects no information from anyone, including children under 13 (or the equivalent minimum age in your jurisdiction).</p>
 <p lang="zh">长物不面向儿童，也不从任何人收集信息——包括 13 岁以下（或你所在地区规定的相应年龄）的儿童。</p>
 
-<h2 lang="en">10. Your rights</h2>
-<h2 lang="zh">十、你的权利</h2>
+<h2 lang="en">9. Your rights</h2>
+<h2 lang="zh">九、你的权利</h2>
 <p lang="en">Regulations such as the GDPR, the CCPA, and China's PIPL grant you rights of access, correction, deletion, and portability over personal data a company holds about you. The developer holds none — your records exist only on your device, under your control, and there is no server-side copy to request, export, or erase.</p>
 <p lang="zh">GDPR、CCPA、中国《个人信息保护法》等法规赋予你对企业所持个人数据的访问、更正、删除和可携带权。开发者不持有任何这类数据——你的记录只存在于你自己的设备上、由你掌控，不存在任何服务器端副本可供调取、导出或删除。</p>
-<p lang="en">For the category lookups described in section 3, Wikimedia is the party receiving the request; its own policy governs what it retains. For purchases, Apple is that party.</p>
-<p lang="zh">对于第三节所述的品类查询，接收请求的一方是 Wikimedia，其保留什么由其自身政策决定；对于购买，这一方是苹果。</p>
+<p lang="en">For purchases, Apple is the party processing the transaction under its own policy.</p>
+<p lang="zh">对于购买，处理交易的一方是苹果，适用其自身政策。</p>
 
-<h2 lang="en">11. Changes to this policy</h2>
-<h2 lang="zh">十一、政策变更</h2>
-<p lang="en">If a future version sends anything new off the device, this page will be updated to describe exactly what is sent and when, and the effective date at the top will change. Version 1.0 added the category lookup described in section 3 and the purchase described in section 4; earlier versions made no network requests at all.</p>
-<p lang="zh">如果未来的版本会把任何新的东西发出设备，本页都会更新，明确写清楚什么时候发送了什么，顶部的生效日期也会随之改变。1.0 版新增了第三节的品类查询和第四节的内购；更早的版本不发起任何网络请求。</p>
+<h2 lang="en">10. Changes to this policy</h2>
+<h2 lang="zh">十、政策变更</h2>
+<p lang="en">A pre-release build briefly sent unrecognised item names to a third-party encyclopaedia to guess a category. That was removed before release: recognition now runs entirely on device. If any future version sends something off the device, this page will be updated to say exactly what and when, <em>before</em> that version ships.</p>
+<p lang="zh">有一个未发布的开发版本曾经把认不出的物品名称发给第三方百科去猜品类。该功能在发布前已被移除，识别现在完全在设备上完成。如果未来某个版本会把任何东西发出设备，本页都会在那个版本发布<em>之前</em>写清楚发的是什么、什么时候发。</p>
 
-<h2 lang="en">12. Contact</h2>
-<h2 lang="zh">十二、联系方式</h2>
+<h2 lang="en">11. Contact</h2>
+<h2 lang="zh">十一、联系方式</h2>
 <p lang="en">Questions about this policy: <a href="mailto:stonsy1999@gmail.com">stonsy1999@gmail.com</a></p>
 <p lang="zh">对本政策有疑问：<a href="mailto:stonsy1999@gmail.com">stonsy1999@gmail.com</a></p>
 
