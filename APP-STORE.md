@@ -32,9 +32,10 @@ app 内（设置页、付费墙）写死的就是这三个地址。
 - 内购完全走苹果通道，开发者不接触也不留存。苹果明确说明：
   作为 App Store 服务一部分由苹果收集的数据不需要你申报
 
-> 曾有一个未发布的开发版本会把认不出的物品名称发给 Wikidata 猜品类，
-> 那时这里的答案是 Yes / Search History。该功能在发布前已整个移除，
-> 所以答案回到 No。**如果哪天又加回联网，必须先改这一节和隐私政策。**
+> A pre-release build sent unrecognised item names to a third-party encyclopaedia to guess
+> a category, and this answer was Yes / Search History at the time. That feature was
+> removed before release, so the answer is No again. **If networking is ever added back,
+> change this section and the privacy policy first.**
 
 ## 跟踪与 ATT
 
